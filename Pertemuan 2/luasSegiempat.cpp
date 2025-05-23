@@ -1,22 +1,23 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 
-int main() {
-    float luas, volume, diameter, jari, sisi;
-    const float phi = 3.14;
+int main(){
+    //deklarasi variabel
+    float luas, p, l;
 
-    cout << "Masukkan sisi : ";
-    cin >> sisi;
+    //input p
+    cout<<"Masukkan Panjang : ";
+    cin>>p;
 
-    cout << "Masukkan jari : ";
-    cin >> jari;
+    //input l
+    cout<<"Masukkan Lebar : ";
+    cin>>l;
 
-    cout << "Masukkan sisi : ";
-    cin >> sisi;
+    //menghitung luas
+    luas= p*l; 
+    //tampilkan luas
+    cout<<"Luas = "<<luas<<endl;
 
-    luas = 4 * phi * jari * jari;
-    volume = (4/3) * phi * jari * jari * jari;
-    cout << "Luas = " << luas << endl;
-    cout << "Luas = " << volume << endl;
+    return 0;
 
 }
